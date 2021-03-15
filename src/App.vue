@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-    <counter />
+    <step />
   </div>
 </template>
 
 <script>
-import counter from "./components/counter.vue";
+import step from "./components/step-one.vue";
 
 export default {
   name: "App",
 
   components: {
-    counter
+    step
   }
 };
 </script>

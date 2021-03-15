@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  name: "counter",
+  name: "step-one",
 
   data() {
     return {
@@ -28,6 +28,10 @@ export default {
 
     reset() {
       this.count = 0;
+    },
+
+    getCount() {
+      return this.count;
     }
   }
 };

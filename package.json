@@ -63,6 +63,7 @@
     "not dead"
   ],
   "jest": {
-    "preset": "@vue/cli-plugin-unit-jest"
+    "preset": "@vue/cli-plugin-unit-jest",
+    "coverageReporters": ["html", "text-summary"]
   }
 }
