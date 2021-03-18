@@ -1,7 +1,7 @@
 ﻿import {mount, shallowMount} from '@vue/test-utils';
-import counter from '@/components/step-one.vue';
+import stepOne from '@/components/step-one.vue';
 
-const wrapper = shallowMount(counter)
+const wrapper = shallowMount(stepOne)
 const vm = wrapper.vm
 
 const counterValue = wrapper.find('.counter-value')
@@ -10,7 +10,7 @@ const btnIncrease = wrapper.find('.btn-increase')
 const btnDecrease = wrapper.find('.btn-decrease')
 const btnReset = wrapper.find('.btn-reset')
 
-describe('counter', () => {
+describe('Step One', () => {
 
   /*
   it('Is instance of Vue', () => {
