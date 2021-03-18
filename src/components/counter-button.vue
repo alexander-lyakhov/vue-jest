@@ -1,16 +1,10 @@
-﻿<template>
-  <button class="btn blue" @click.prevent="increase">Increase counter</button>
+﻿<template functional>
+  <button class="btn blue" @click.prevent="listeners.increase">Increase counter</button>
 </template>
 
 <script>
 export default {
   name: 'CounterButton',
-
-  methods: {
-    increase() {
-      this.$emit('increase');
-    }
-  }
 }
 </script>
 
