@@ -1,11 +1,16 @@
 <template>
   <div id="app">
-    <counter-display :count="count" :doubleCount="doubleCount" />
-    <counter-button @increase="increaseCounter" />
+    <counter #default="{count, doubleCount, increaseCounter}">
+      <div>
+        <counter-display :count="count" :doubleCount="doubleCount" />
+        <counter-button @increase="increaseCounter" />
+      </div>
+    </counter>
   </div>
 </template>
 
 <script>
+import counter from '@/components/counter.vue'
 import counterDisplay from '@/components/counter-display.vue'
 import counterButton from '@/components/counter-button.vue'
 
@@ -13,27 +18,10 @@ export default {
   name: "App",
 
   components: {
+    counter,
     counterDisplay,
     counterButton
   },
-
-  data() {
-    return {
-      count: 0
-    }
-  },
-
-  computed: {
-    doubleCount() {
-      return this.count * 2;
-    }
-  },
-
-  methods: {
-    increaseCounter() {
-      this.count++;
-    }
-  }
 };
 </script>
 
