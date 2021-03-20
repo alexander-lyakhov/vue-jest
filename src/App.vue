@@ -1,10 +1,8 @@
 <template>
   <div id="app">
     <counter #default="{count, doubleCount, increaseCounter}">
-      <div>
-        <counter-display :count="count" :doubleCount="doubleCount" />
-        <counter-button @increase="increaseCounter" />
-      </div>
+      <counter-display :count="count" :doubleCount="doubleCount" />
+      <counter-button @increase="increaseCounter" />
     </counter>
   </div>
 </template>
